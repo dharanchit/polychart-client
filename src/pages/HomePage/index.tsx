@@ -29,6 +29,7 @@ const HomePage = () => {
     return (
         <Container maxWidth="lg">
         <SearchBarWrapper>
+            {/* Todo rate limit with debounce */}
             <SearchBar setSearchString={setSearchString} searchString={searchString} />
         </SearchBarWrapper>
         <TableData setNoOfPages={setNoOfPages} searchString={searchString} currentPage={currentPage} />
